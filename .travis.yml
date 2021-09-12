@@ -6,6 +6,14 @@ before_install:
 script:
   - ./gradlew build 
 
+deploy:
+  provider: releases
+  user: "Moha78955"
+  password: "Mo0210@m"
+  skip_cleanup: true
+  on:
+    tags: true
+
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
