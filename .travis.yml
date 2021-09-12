@@ -6,7 +6,7 @@ before_install:
 
 deploy:
   provider: releases
-  token: $GITHUB_TOKEN
+  api_key: $GITHUB_TOKEN
   skip_cleanup: true
   on:
     tags: true
