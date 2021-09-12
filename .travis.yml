@@ -6,7 +6,7 @@ before_install:
 
 deploy:
   provider: releases
-  github_token: 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
+  github_token: $GITHUB_TOKEN
   skip_cleanup: true
   on:
     tags: true
