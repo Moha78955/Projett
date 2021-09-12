@@ -7,7 +7,7 @@ before_install:
 deploy:
   provider: releases
   api_key: 
-  secure: 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
+    secure: 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
   skip_cleanup: true
   on:
     tags: true
