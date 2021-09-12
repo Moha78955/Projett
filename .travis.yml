@@ -1,8 +1,11 @@
 language: java
 install: skip
+jdk: oraclejdk8
+before_install:
+- chmod +x gradlew
 
 script:
-  - ./gradlew build
+  - ./gradlew build --scan -s
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
