@@ -3,13 +3,11 @@ install: skip
 jdk: oraclejdk11
 before_install:
   - chmod +x gradlew
-script:
-  - ./gradlew build 
 
 deploy:
   provider: releases
-  user: "Moha78955"
-  password: "Mo0210@m"
+  api_key:
+    secure: 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
   skip_cleanup: true
   on:
     tags: true
