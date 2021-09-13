@@ -1,6 +1,5 @@
 import { Component,ViewChild ,ChangeDetectionStrategy, ChangeDetectorRef,OnDestroy} from '@angular/core';
 declare var $: any;
-import * as RecordRTC from 'recordrtc';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AudioRecordingService } from './audio-recording.service';
 @Component({
