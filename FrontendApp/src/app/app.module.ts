@@ -2,15 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AudioRecordingService } from './audio-recording.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    
+    
   ],
-  providers: [],
+  providers: [AudioRecordingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
